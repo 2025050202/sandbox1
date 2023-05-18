@@ -58,6 +58,7 @@ Dishes are dried
 
 
 redis_dryer2.py
+~~~python
 def dryer():
     import redis
     import os
@@ -82,5 +83,5 @@ DRYERS=3
 for num in range(DRYERS):
     p = multiprocessing.Process(target=dryer)
     p.start()
-    
+    ~~~
     
